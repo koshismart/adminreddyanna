@@ -20,7 +20,7 @@ import { usePermissions } from "../../../Hooks/usePermissions";
 import { getAvailableAdminPanels } from "../../../Hooks/getAvailableAdminPanels";
 
 const CreateAccount = () => {
-  const [cookies, setCookie, removeCookie] = useCookies(["Admin"]);
+  const [cookies, setCookie, removeCookie] = useCookies(["token"]);
   const queryClient = useQueryClient();
   const navigate = useNavigate();
   const formRef = useRef(null);

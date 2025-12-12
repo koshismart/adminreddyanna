@@ -10,7 +10,7 @@ import moment from "moment";
 import { decodedTokenData } from "../../../Helper/auth";
 
 const AccountStatement = () => {
-  const [cookies] = useCookies(["token"]);
+  const [cookies] = useCookies(["Admin"]);
 
   const currentUserData = decodedTokenData(cookies) || {};
   const currentUserId = currentUserData.userId || currentUserData._id;
